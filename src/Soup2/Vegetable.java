@@ -1,7 +1,8 @@
 package Soup2;
 
 public class Vegetable {
-    private double weight;
+    protected double weight;
+    protected static double peelingPercentage = 0.10;
 
     public Vegetable(double weight) {
         this.weight = weight;
@@ -13,6 +14,16 @@ public class Vegetable {
 
     public double getWeight(){
         return weight;
+    }
+
+
+    public double getPeelingWeight() {
+        return weight * peelingPercentage;
+    }
+
+
+    public static void setPeelingPercentage(double newPercentage) {
+        peelingPercentage = newPercentage;
     }
 
     @Override

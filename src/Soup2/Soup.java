@@ -2,7 +2,8 @@ package Soup2;
 
 public class Soup {
     private Vegetable[] ingredients;
-    private int count;
+    private int count = 0;
+
 
     public Soup() {
         ingredients = new Vegetable[10];
@@ -24,5 +25,13 @@ public class Soup {
             sb.append(ingredients[i].toString()).append("\n");
         }
         return sb.toString();
+    }
+
+    public double getPeelingWeight() {
+        double totalPeelingWeight = 0;
+        for (int i = 0; i < count; i++) {
+            totalPeelingWeight += ingredients[i].getPeelingWeight();
+        }
+        return totalPeelingWeight;
     }
 }

@@ -32,4 +32,9 @@ public class Potatoe extends Vegetable {
             System.out.println("There's to many eyes in this potatoe");
         }
     }
+
+    @Override
+    public double getPeelingWeight() {
+        return (weight * peelingPercentage) + (eyes * 0.010);
+    }
 }
