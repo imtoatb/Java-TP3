@@ -1,14 +1,16 @@
+package Soup1;
+
 public class Carrot {
-    private float weight;
+    private double weight;
     private int length;
 
-    public Carrot(float weight, int length) {
+    public Carrot(double weight, int length) {
         this.weight = weight;
         this.length = length;
     }
 
 
-    public float getWeight() {
+    public double getWeight() {
         return weight;
     }
 
@@ -16,7 +18,7 @@ public class Carrot {
         return length;
     }
 
-    public void setWeight(float weight) {
+    public void setWeight(double weight) {
         this.weight = weight;
     }
 
@@ -27,5 +29,7 @@ public class Carrot {
     public void dipslay() {
         System.out.println("Carrot : [" + weight + "kg - " + length + "cm]");
     }
+
 }
+
 
