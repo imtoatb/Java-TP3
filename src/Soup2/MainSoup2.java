@@ -15,6 +15,7 @@ public class MainSoup2 {
         s.add(new Potatoe(0.500, 4));
         s.add(new Potatoe(0.150, 2));
         s.add(new Carrot(0.20, 25));
+        s.add(new Potatoe(0.450, 2));
         System.out.println(s);
     }
 }
